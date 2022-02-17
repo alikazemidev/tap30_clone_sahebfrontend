@@ -1,0 +1,37 @@
+/* css reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* css reset */
+
+/* root variable */
+:root {
+  --color-primary: #ff5722;
+  --color-secodary-light: #fff6f2;
+  --color-secodary-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-heading: #000;
+  --color-white: #fff;
+  --color-body: #333;
+}
+/* root variable */
+
+/* asinging color */
+
+body {
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+
+/* asinging color */
