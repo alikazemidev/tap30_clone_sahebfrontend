@@ -101,3 +101,29 @@ h2 {
   }
 }
 /* buttons */
+
+/* badge */
+.badge {
+  border: 2px solid var(--color-primary);
+  border-radius: 32px;
+  color: var(--color-primary);
+  background: var(--color-white);
+  font-size: 1.2rem;
+  padding: 0.5rem 1.3rem;
+  margin: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.badge--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge,
+  .badge--primary {
+    font-size: 1.4rem;
+  }
+}
+/* badge */
