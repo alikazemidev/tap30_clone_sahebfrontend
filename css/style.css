@@ -161,3 +161,38 @@ h2 {
 }
 
 /* list */
+
+/* plan */
+
+.block-plan {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+.paln {
+  max-width: 500px;
+}
+
+.card {
+  border-radius: 20px;
+
+  overflow: hidden;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.096);
+}
+
+.card__header,
+.card__body {
+  padding: 3rem 2.5rem;
+}
+.card__header {
+  background: var(--color-secodary-dark);
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plan {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* plan */
