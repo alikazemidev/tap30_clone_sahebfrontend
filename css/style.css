@@ -13,6 +13,7 @@
 /* root variable */
 :root {
   --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
   --color-secodary-light: #fff6f2;
   --color-secodary-dark: #ffa589;
   --color-navbar: #f8f8f8;
@@ -172,11 +173,11 @@ h2 {
 }
 .paln {
   max-width: 500px;
+  font-size: 1.8rem;
 }
 
 .card {
   border-radius: 20px;
-
   overflow: hidden;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.096);
 }
@@ -186,7 +187,32 @@ h2 {
   padding: 3rem 2.5rem;
 }
 .card__header {
+  color: var(--color-white);
+}
+.card--secondary .card__header {
   background: var(--color-secodary-dark);
+}
+.card--primary .card__header {
+  background-color: var(--color-primary-light);
+}
+
+/* header plan */
+
+.plan__introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.plan__price {
+  font-size: 3rem;
+}
+.plan__billing-cycle {
+  font-size: 1.4rem;
+}
+.plan__discription {
+  display: block;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
