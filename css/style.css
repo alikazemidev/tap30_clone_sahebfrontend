@@ -151,7 +151,7 @@ h2 {
 .list--tick .list__item {
   background: url(../assets/images/Tick-Square.svg) no-repeat right center;
   padding: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -167,13 +167,14 @@ h2 {
 
 .block-plan {
   display: grid;
-  gap: 2rem;
+  gap: 4rem 6rem;
   grid-template-columns: 1fr;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 .paln {
-  max-width: 500px;
+  max-width: 300px;
   font-size: 1.8rem;
+  transition: all 0.4s ease-in;
 }
 
 .card {
@@ -215,9 +216,28 @@ h2 {
   margin-top: 1.5rem;
 }
 
+.plan .btn--block {
+  margin-top: 6rem;
+  font-size: 1.6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 8rem;
+    margin-top: 7rem;
+  }
+  .plan .btn--block {
+    font-size: 1.8rem;
+  }
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan--popular:hover {
+    transform: scale(1.14);
   }
 }
 
