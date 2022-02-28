@@ -150,7 +150,7 @@ h2 {
 } */
 .list--tick .list__item {
   background: url(../assets/images/Tick-Square.svg) no-repeat right center;
-  padding: 3rem;
+  padding: 1.5rem 3rem;
   margin-bottom: 1rem;
 }
 
@@ -165,14 +165,23 @@ h2 {
 
 /* plan */
 
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* container */
+
 .block-plan {
   display: grid;
-  gap: 4rem 6rem;
-  grid-template-columns: 1fr;
-  margin-top: 7rem;
+  gap: 10rem 5rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  margin-top: 6rem;
 }
 .paln {
-  max-width: 300px;
+  /* max-width: 300px; */
   font-size: 1.8rem;
   transition: all 0.4s ease-in;
 }
@@ -222,11 +231,6 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
-  .block-plan {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem 8rem;
-    margin-top: 7rem;
-  }
   .plan .btn--block {
     font-size: 1.8rem;
   }
@@ -242,3 +246,5 @@ h2 {
 }
 
 /* plan */
+
+
